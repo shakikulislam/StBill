@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.VisualStudio.Shell.Interop</id>
+    <version>7.10.6073</version>
+    <title>Microsoft.VisualStudio.Shell.Interop</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>https://aka.ms/AA43ofb</licenseUrl>
+    <projectUrl>https://aka.ms/vsextensibility</projectUrl>
+    <iconUrl>https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.shell.interop/7.10.6073/icon</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Microsoft.VisualStudio.Shell.Interop</description>
+    <summary>Microsoft.VisualStudio.Shell.Interop</summary>
+    <releaseNotes>https://go.microsoft.com/fwlink/?LinkID=746387</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft VisualStudio Shell Interop VSSDK</tags>
+    <dependencies>
+      <dependency id="Microsoft.VisualStudio.TextManager.Interop" version="7.10.6072" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.VisualStudio.Shell.Design</id>
+    <version>14.3.25407</version>
+    <title>Microsoft.VisualStudio.Shell.Design</title>
+    <authors>Microsoft, VisualStudioExtensibility</authors>
+    <owners>Microsoft,VisualStudioExtensibility</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkID=614949</licenseUrl>
+    <projectUrl>http://aka.ms/vsextensibility</projectUrl>
+    <iconUrl>http://aka.ms/vsextensibilityicon</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft.VisualStudio.Shell.Design</description>
+    <summary>Microsoft.VisualStudio.Shell.Design</summary>
+    <releaseNotes>https://www.visualstudio.com/news/vs2015-vs</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft VisualStudio Shell Design VSSDK</tags>
+    <dependencies>
+      <dependency id="Microsoft.VisualStudio.Shell.Interop.8.0" version="8.0.50727" />
+      <dependency id="Microsoft.VisualStudio.Shell.Interop" version="7.10.6071" />
+      <dependency id="Microsoft.VisualStudio.Shell.Immutable.10.0" version="10.0.30319" />
+      <dependency id="Microsoft.VisualStudio.TextManager.Interop" version="7.10.6070" />
+    </dependencies>
+  </metadata>
+</package>

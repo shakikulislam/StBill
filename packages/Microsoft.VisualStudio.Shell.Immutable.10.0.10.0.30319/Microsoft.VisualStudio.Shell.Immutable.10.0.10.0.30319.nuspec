@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.VisualStudio.Shell.Immutable.10.0</id>
+    <version>10.0.30319</version>
+    <title>Microsoft.VisualStudio.Shell.Immutable.10.0</title>
+    <authors>Microsoft, VisualStudioExtensibility</authors>
+    <owners>Microsoft, VisualStudioExtensibility</owners>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkID=614949</licenseUrl>
+    <projectUrl>http://aka.ms/vsextensibility</projectUrl>
+    <iconUrl>https://api.nuget.org/v3-flatcontainer/microsoft.visualstudio.shell.immutable.10.0/10.0.30319/icon</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft.VisualStudio.Shell.Immutable.10.0</description>
+    <summary>Microsoft.VisualStudio.Shell.Immutable.10.0</summary>
+    <releaseNotes>https://www.visualstudio.com/news/vs2015-vs</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft VisualStudio Shell Immutable Shell.Immutable 10 10.0 VSSDK</tags>
+  </metadata>
+</package>

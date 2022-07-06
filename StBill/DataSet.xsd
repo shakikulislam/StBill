@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet" targetNamespace="http://tempuri.org/DataSet.xsd" xmlns:mstns="http://tempuri.org/DataSet.xsd" xmlns="http://tempuri.org/DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet" msprop:Generator_UserDSName="DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ChequDetails" msprop:Generator_TableClassName="ChequDetailsDataTable" msprop:Generator_TableVarName="tableChequDetails" msprop:Generator_RowChangedName="ChequDetailsRowChanged" msprop:Generator_TablePropName="ChequDetails" msprop:Generator_RowDeletingName="ChequDetailsRowDeleting" msprop:Generator_RowChangingName="ChequDetailsRowChanging" msprop:Generator_RowEvHandlerName="ChequDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="ChequDetailsRowDeleted" msprop:Generator_RowClassName="ChequDetailsRow" msprop:Generator_UserTableName="ChequDetails" msprop:Generator_RowEvArgName="ChequDetailsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CHQ_DTL_ID" msprop:Generator_ColumnVarNameInTable="columnCHQ_DTL_ID" msprop:Generator_ColumnPropNameInRow="CHQ_DTL_ID" msprop:Generator_ColumnPropNameInTable="CHQ_DTL_IDColumn" msprop:Generator_UserColumnName="CHQ_DTL_ID" type="xs:double" minOccurs="0" />
+              <xs:element name="RECEIVING_DATE" msprop:Generator_ColumnVarNameInTable="columnRECEIVING_DATE" msprop:Generator_ColumnPropNameInRow="RECEIVING_DATE" msprop:Generator_ColumnPropNameInTable="RECEIVING_DATEColumn" msprop:Generator_UserColumnName="RECEIVING_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PBS_ID" msprop:Generator_ColumnVarNameInTable="columnPBS_ID" msprop:Generator_ColumnPropNameInRow="PBS_ID" msprop:Generator_ColumnPropNameInTable="PBS_IDColumn" msprop:Generator_UserColumnName="PBS_ID" type="xs:double" minOccurs="0" />
+              <xs:element name="BILL_TYPE_ID" msprop:Generator_ColumnVarNameInTable="columnBILL_TYPE_ID" msprop:Generator_ColumnPropNameInRow="BILL_TYPE_ID" msprop:Generator_ColumnPropNameInTable="BILL_TYPE_IDColumn" msprop:Generator_UserColumnName="BILL_TYPE_ID" type="xs:double" minOccurs="0" />
+              <xs:element name="BANK_ID" msprop:Generator_ColumnVarNameInTable="columnBANK_ID" msprop:Generator_ColumnPropNameInRow="BANK_ID" msprop:Generator_ColumnPropNameInTable="BANK_IDColumn" msprop:Generator_UserColumnName="BANK_ID" type="xs:double" minOccurs="0" />
+              <xs:element name="CHEQUE_NUMBER" msprop:Generator_ColumnVarNameInTable="columnCHEQUE_NUMBER" msprop:Generator_ColumnPropNameInRow="CHEQUE_NUMBER" msprop:Generator_ColumnPropNameInTable="CHEQUE_NUMBERColumn" msprop:Generator_UserColumnName="CHEQUE_NUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="CHEQUE_DATE" msprop:Generator_ColumnVarNameInTable="columnCHEQUE_DATE" msprop:Generator_ColumnPropNameInRow="CHEQUE_DATE" msprop:Generator_ColumnPropNameInTable="CHEQUE_DATEColumn" msprop:Generator_UserColumnName="CHEQUE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AMOUNT" msprop:Generator_ColumnVarNameInTable="columnAMOUNT" msprop:Generator_ColumnPropNameInRow="AMOUNT" msprop:Generator_ColumnPropNameInTable="AMOUNTColumn" msprop:Generator_UserColumnName="AMOUNT" type="xs:double" minOccurs="0" />
+              <xs:element name="DURATION_FROM" msprop:Generator_ColumnVarNameInTable="columnDURATION_FROM" msprop:Generator_ColumnPropNameInRow="DURATION_FROM" msprop:Generator_ColumnPropNameInTable="DURATION_FROMColumn" msprop:Generator_UserColumnName="DURATION_FROM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DURATION_TO" msprop:Generator_ColumnVarNameInTable="columnDURATION_TO" msprop:Generator_ColumnPropNameInRow="DURATION_TO" msprop:Generator_ColumnPropNameInTable="DURATION_TOColumn" msprop:Generator_UserColumnName="DURATION_TO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" msprop:Generator_UserColumnName="REMARK" type="xs:string" minOccurs="0" />
+              <xs:element name="CREATE_DATE" msprop:Generator_ColumnVarNameInTable="columnCREATE_DATE" msprop:Generator_ColumnPropNameInRow="CREATE_DATE" msprop:Generator_ColumnPropNameInTable="CREATE_DATEColumn" msprop:Generator_UserColumnName="CREATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CREATE_BY" msprop:Generator_ColumnVarNameInTable="columnCREATE_BY" msprop:Generator_ColumnPropNameInRow="CREATE_BY" msprop:Generator_ColumnPropNameInTable="CREATE_BYColumn" msprop:Generator_UserColumnName="CREATE_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="UPDATE_DATE" msprop:Generator_ColumnVarNameInTable="columnUPDATE_DATE" msprop:Generator_ColumnPropNameInRow="UPDATE_DATE" msprop:Generator_ColumnPropNameInTable="UPDATE_DATEColumn" msprop:Generator_UserColumnName="UPDATE_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UPDATE_BY" msprop:Generator_ColumnVarNameInTable="columnUPDATE_BY" msprop:Generator_ColumnPropNameInRow="UPDATE_BY" msprop:Generator_ColumnPropNameInTable="UPDATE_BYColumn" msprop:Generator_UserColumnName="UPDATE_BY" type="xs:string" minOccurs="0" />
+              <xs:element name="BILL_TYPE" msprop:Generator_ColumnVarNameInTable="columnBILL_TYPE" msprop:Generator_ColumnPropNameInRow="BILL_TYPE" msprop:Generator_ColumnPropNameInTable="BILL_TYPEColumn" msprop:Generator_UserColumnName="BILL_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="BANK_NAME" msprop:Generator_ColumnVarNameInTable="columnBANK_NAME" msprop:Generator_ColumnPropNameInRow="BANK_NAME" msprop:Generator_ColumnPropNameInTable="BANK_NAMEColumn" msprop:Generator_UserColumnName="BANK_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="PBS_NAME" msprop:Generator_ColumnVarNameInTable="columnPBS_NAME" msprop:Generator_ColumnPropNameInRow="PBS_NAME" msprop:Generator_ColumnPropNameInTable="PBS_NAMEColumn" msprop:Generator_UserColumnName="PBS_NAME" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
