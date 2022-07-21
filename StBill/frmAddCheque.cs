@@ -20,9 +20,12 @@ namespace StBill
 
             if (isUpdate)
             {
-                this.Text = "Update Check Details";
+                this.Text = "Delete of Update Check Details";
+                buttonDelete.Visible = true;
+
                 _checkId = checkId;
                 buttonAdd.Text = "Update";
+
                 var dr = Db.GetDataReader("SELECT * FROM TBL_CHEQUE_DTL WHERE ((CHQ_DTL_ID=" + checkId + "))");
                 if (dr.HasRows)
                 {
@@ -54,7 +57,7 @@ namespace StBill
                 GlobalSetting.GetFirstDate(dateTimePickerFrom.Value).ToShortDateString() + "', '" +
                 GlobalSetting.GetFirstDate(dateTimePickerTo.Value).ToShortDateString() + "', '" +
                 richTextBoxRemark.Text + "', '"+DateTime.Now+"','" + GlobalSetting.EmpUserName + "') ";
-            var isSaved = Db.Insert(query);
+            var isSaved = Db.QueryExecute(query);
             if (isSaved)
             {
                 textBoxChequeNumber.Clear();
@@ -76,10 +79,11 @@ namespace StBill
                             "REMARK='" + richTextBoxRemark.Text + "'," + "UPDATE_DATE='" + DateTime.Now + "', " +
                             "UPDATE_BY='" + GlobalSetting.EmpUserName + "' " +
                             "WHERE ((CHQ_DTL_ID = " + checkId + " )) ";
-                var isUpdate = Db.Update(query);
+                var isUpdate = Db.QueryExecute(query);
                 if (isUpdate)
                 {
-                    Close();
+                    MessageBox.Show("Successfully update.");
+                    this.Close();
                 }
                 else
                 {
@@ -146,11 +150,35 @@ namespace StBill
                 {
                     case "Add":
                         SaveCheque();
+                        Application.DoEvents();
                         break;
                     case "Update":
                         UpdateCheque(_checkId);
+                        Application.DoEvents();
                         Close();
                         break;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure that you want to permanantly dekete this selected check?","Confirmation",MessageBoxButtons.OKCancel)==DialogResult.OK)
+                {
+                    var query = "DELETE FROM TBL_CHEQUE_DTL WHERE CHQ_DTL_ID=" + _checkId + "";
+                    var isDelete = Db.QueryExecute(query);
+                    if (isDelete)
+                    {
+                        MessageBox.Show("Successfully Delete.");
+                        this.Close();
+
+                    }
                 }
             }
             catch (Exception ex)

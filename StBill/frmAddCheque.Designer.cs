@@ -50,6 +50,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.comboBoxBillType = new System.Windows.Forms.ComboBox();
             this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBoxBankList
@@ -265,11 +266,24 @@
             this.dateTimePickerFrom.Size = new System.Drawing.Size(130, 23);
             this.dateTimePickerFrom.TabIndex = 23;
             // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.Location = new System.Drawing.Point(136, 374);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(98, 35);
+            this.buttonDelete.TabIndex = 24;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Visible = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
             // frmAddCheque
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 437);
+            this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.dateTimePickerFrom);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.comboBoxBillType);
@@ -327,5 +341,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBoxBillType;
         private System.Windows.Forms.DateTimePicker dateTimePickerFrom;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }

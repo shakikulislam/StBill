@@ -67,25 +67,25 @@ namespace StBill
             return result;
         }
 
-        public static bool Insert(string query)
-        {
-            var result = false;
-            try
-            {
-                GetConnection();
-                OleDbCommand cmd = new OleDbCommand(query, Connection);
-                result = cmd.ExecuteNonQuery() > 0;
-            }
-            catch (Exception ex)
-            {
-                result = false;
-                throw new Exception(ex.ToString());
-            }
+        //public static bool QueryExecute1(string query)
+        //{
+        //    var result = false;
+        //    try
+        //    {
+        //        GetConnection();
+        //        OleDbCommand cmd = new OleDbCommand(query, Connection);
+        //        result = cmd.ExecuteNonQuery() > 0;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        result = false;
+        //        throw new Exception(ex.ToString());
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
 
-        public static bool Update(string query)
+        public static bool QueryExecute(string query)
         {
             var result = false;
             try

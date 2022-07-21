@@ -39,6 +39,8 @@ namespace StBill
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             new frmAddCheque("").Show();
+            buttonSearch.PerformClick();
+            Application.DoEvents();
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)
@@ -128,6 +130,8 @@ namespace StBill
             try
             {
                 new frmAddCheque(listViewChequeList.SelectedItems[0].SubItems[columnHeaderCheckDtlId.Index].Text, true).ShowDialog();
+                buttonSearch.PerformClick();
+                Application.DoEvents();
             }
             catch (Exception ex)
             {
